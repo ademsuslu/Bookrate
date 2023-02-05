@@ -115,15 +115,25 @@ body {
   margin: 3rem;
   align-items: center;
   position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Slider {
+    background-color: red;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .BottomSlideImg {
   width: 100%;
   position: absolute;
+  right: 0;
   left: 0;
-  bottom: -140px;
+  bottom: -100px;
   z-index: -1;
-  height: 30%;
 }
 
 .Slider-right {
@@ -224,6 +234,8 @@ body {
 .Slider-left-books {
   display: flex;
   margin-top: 15px;
+  width: 40vw;
+
 }
 
 .Slider-left-books h4 {
@@ -302,3 +314,91 @@ body {
 
 
 /* HAKKIMIZDA SAYFASI */
+.about {
+  margin: 5rem 2rem;
+  width: 100%;
+}
+
+.about span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #000000;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.about h1 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 115px;
+  /* identical to box height, or 120% */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.about-desc {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-desc p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.about-ımg {
+  width: 350px;
+  height: 350px;
+}
+
+.about-desc-bottom {
+  margin-top: 2rem;
+}
+
+.about-desc-bottom h3 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.about-desc-bottom p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+
+  color: #000000;
+
+}
+
+@media only screen and (max-width: 992px) {
+  .about-ımg-wrapper {
+    display: none;
+  }
+}
+
+/* HAKKIMIZDA AND */
