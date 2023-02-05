@@ -5,7 +5,10 @@
 }
 
 body {
-  background: linear-gradient(147.47deg, #EDEFE2 0.66%, #DBE9E4 105.7%, #DBE9E4 105.7%);
+  background: linear-gradient(147.47deg,
+      #edefe2 0.66%,
+      #dbe9e4 105.7%,
+      #dbe9e4 105.7%);
   height: 100%;
 }
 
@@ -14,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 .row {
   display: flex;
@@ -40,17 +42,16 @@ body {
   margin-top: 18px;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #FFFFFF;
-  border-right: 1px solid #FFFFFF;
-  border-left: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
   border-radius: 10px;
 
-  background: linear-gradient(180deg, #EDEFE2 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #edefe2 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .NavbarList {
   display: flex;
-
 }
 
 .NavbarListItem {
@@ -71,8 +72,6 @@ body {
   white-space: nowrap;
 }
 
-
-
 .Navbar-sağ {
   display: flex;
   justify-content: space-between;
@@ -83,7 +82,7 @@ body {
 .Navbar-input-wrapper {
   display: flex;
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.5;
   border-radius: 10px;
   height: 50px;
@@ -91,7 +90,7 @@ body {
 }
 
 .Navbar-input-wrapper input {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -115,7 +114,6 @@ body {
   margin: 3rem;
   align-items: center;
   position: relative;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -132,8 +130,9 @@ body {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -100px;
+  bottom: 0;
   z-index: -1;
+  transform: translateY(calc(100% - 70px));
 }
 
 .Slider-right {
@@ -153,11 +152,10 @@ body {
   font-size: 15px;
   line-height: 18px;
   text-transform: capitalize;
-  color: #E59437;
+  color: #e59437;
 }
 
 .Slider-right-col h4 {
-
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
@@ -235,7 +233,6 @@ body {
   display: flex;
   margin-top: 15px;
   width: 40vw;
-
 }
 
 .Slider-left-books h4 {
@@ -249,10 +246,33 @@ body {
 }
 
 .Slider-left-books img {
-  margin-top: .7rem;
+  margin-top: 0.7rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .Slider {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
 
+  .Slider-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Slider-left-books {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .book-wrapper:nth-child(3) {
+    display: revert;
+  }
+}
 
 /* Slider and*/
 
@@ -279,7 +299,7 @@ body {
 }
 
 .kategori-slide {
-  background: linear-gradient(180deg, #EDEFE2 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #edefe2 0%, rgba(255, 255, 255, 0) 100%);
   border-radius: 10px;
   width: 270px;
   height: 140px;
@@ -312,12 +332,11 @@ body {
   cursor: pointer;
 }
 
-
 /* HAKKIMIZDA SAYFASI */
 .about {
   margin: 8rem 2rem;
   width: 100%;
-  background: #FDFBF7;
+  background: #fdfbf7;
   border-radius: 10px;
   padding: 3rem;
 }
@@ -396,7 +415,6 @@ body {
   text-transform: capitalize;
 
   color: #000000;
-
 }
 
 .about-footer {
@@ -405,7 +423,7 @@ body {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(180deg, #EDEFE2 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #edefe2 0%, rgba(255, 255, 255, 0) 100%);
   border-radius: 10px;
 }
 
