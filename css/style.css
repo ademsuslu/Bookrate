@@ -315,8 +315,11 @@ body {
 
 /* HAKKIMIZDA SAYFASI */
 .about {
-  margin: 5rem 2rem;
+  margin: 8rem 2rem;
   width: 100%;
+  background: #FDFBF7;
+  border-radius: 10px;
+  padding: 3rem;
 }
 
 .about span {
@@ -365,8 +368,9 @@ body {
 }
 
 .about-ımg {
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 600px;
+  margin-bottom: 6rem;
 }
 
 .about-desc-bottom {
@@ -393,6 +397,63 @@ body {
 
   color: #000000;
 
+}
+
+.about-footer {
+  margin-top: 3rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #EDEFE2 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 10px;
+}
+
+.about-footer .about-footer-form h3 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 85px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.about-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.about-input-wrapper input,
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.about-footer .btn-group {
+  margin: 5px 0;
+}
+
+.btn-check {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 992px) {
