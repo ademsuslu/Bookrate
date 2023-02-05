@@ -114,6 +114,16 @@ body {
   display: flex;
   margin: 3rem;
   align-items: center;
+  position: relative;
+}
+
+.BottomSlideImg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -140px;
+  z-index: -1;
+  height: 30%;
 }
 
 .Slider-right {
@@ -289,3 +299,6 @@ body {
   outline: none;
   cursor: pointer;
 }
+
+
+/* HAKKIMIZDA SAYFASI */
