@@ -925,3 +925,89 @@ textarea {
 }
 
 /* Hesabım AND */
+
+/* Kitap Listesi  */
+
+.book-kategori {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-kategori h1 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+  color: #000000;
+  cursor: pointer;
+}
+
+.book-kategor-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.book-kategor-wrapper p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+/* List */
+.book-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 240px);
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+}
+
+.book-list-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-list-item {}
+
+.book-list-item img {
+  background: linear-gradient(180deg, #EDEFE2 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 10px;
+  padding: 10px;
+  width: 260px;
+
+}
+
+.book-list-desc {
+  /* width: 295px; */
+}
+
+.book-list-wrapper .book-list-desc h3 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+
+
+
+
+
+/* Kitap Listesi AND */
