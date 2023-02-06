@@ -535,3 +535,191 @@ p {
 }
 
 /* HAKKIMIZDA AND */
+
+/* Iletişim */
+
+.iletişim {
+  width: 100%;
+  padding: 3rem;
+}
+
+.iletişim span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #000000;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.iletişim .iletişim-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iletişim .iletişim-top h1 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 115px;
+  /* or 120% */
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.iletişim-center {
+  display: flex;
+  justify-content: space-between;
+  background: #FDFBF7;
+  border-radius: 10px;
+  padding: 0 1rem;
+
+}
+
+.iletişim-center-harita {
+  padding: 1rem;
+
+}
+
+.iletişim-center-desc-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.iletişim-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+  margin-bottom:
+    3rem;
+}
+
+.iletişim-center-desc {
+  margin-right: 1rem;
+}
+
+.iletişim-icons svg,
+.iletişim-center-desc {
+  margin: 0 .5rem;
+}
+
+.iletişim-center-desc .adress {
+  margin: 0 0 15px 0;
+}
+
+.iletişim-center-desc .adress h3 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: black;
+
+}
+
+.iletişim-center-desc .adress p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0;
+  margin-top: .5rem;
+}
+
+.iletişim-hr {
+  opacity: 0.2;
+  border: 1px solid #000000;
+  margin-top: 2rem;
+}
+
+.iletişim-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.iletişim-form h3 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.iletişim-form-wrapper {
+  display: flex;
+}
+
+.iletişim-input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.iletişim-input-form:nth-child(2) {
+  margin-left: 15px;
+}
+
+.iletişim-input-form input,
+textarea {
+  background: #FDFBF7;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px 3rem;
+  margin-top: .5rem;
+}
+
+.iletişim-input-form button {
+  background: #DDE7DE;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-top: .5rem;
+}
+
+.iletişim-checkbox {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  margin-top: .5em;
+  height: 20px;
+}
+
+.btn-outline-primary {
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+/* Iletişim AND */
