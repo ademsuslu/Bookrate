@@ -723,3 +723,205 @@ textarea {
 }
 
 /* Iletişim AND */
+/* Hesabım  */
+.Hesabım {
+  width: 100%;
+  padding: 3rem;
+}
+
+.Hesabım span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.Hesabım h1 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.hesabım-book {
+  display: flex;
+}
+
+
+.hesabım-book-img img {
+  width: 100%;
+}
+
+.hesabım-books-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.hesabım-book-desc {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.hesabım-book-desc h3 {
+
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.hesabım-stars {
+  display: flex;
+  margin-top: 15px;
+}
+
+.hesabım-stars svg {
+  margin: 0 3px;
+}
+
+.hesabım-stars span {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: black;
+  opacity: 1;
+}
+
+
+.hesabım-comment {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.hesabım-comment span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+  opacity: 1;
+}
+
+.hesabım-incele {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: black;
+  border: 1px solid #000000;
+  padding: 10px 3rem;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#hesabım-book {
+  position: relative;
+}
+
+.star-book {
+  position: absolute;
+  top: -60px;
+  left: 130px;
+  width: 150px;
+}
+
+.hesabım-books-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-top: 5rem;
+}
+
+.hesabım-book-img img {
+  width: 200px;
+}
+
+.öner {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  text-transform: capitalize;
+
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.büyütelim {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 18px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0;
+}
+
+.öneri-wrapper {
+  background: linear-gradient(100.8deg, #FBDEC7 0.45%, rgba(255, 255, 255, 0) 99.71%);
+  border-radius: 21px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.öneri-left {
+  padding: 2rem;
+}
+
+.öneri-wrapper svg {
+  width: 350px;
+}
+
+.öneri-btn {
+  padding: 10px 5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.öneri-btn .öneri-like {
+  width: 25px;
+  margin: 0 5px 0 0;
+}
+
+/* Hesabım AND */
