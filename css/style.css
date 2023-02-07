@@ -731,6 +731,7 @@ p {
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+  width: 100%;
 }
 
 .iletişim-form h3 {
@@ -748,11 +749,13 @@ p {
 
 .iletişim-form-wrapper {
   display: flex;
+  width: 1000px;
 }
 
 .iletişim-input-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .iletişim-input-form:nth-child(2) {
