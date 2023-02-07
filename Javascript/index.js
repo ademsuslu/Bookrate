@@ -6,10 +6,8 @@ menuButton.addEventListener('click', (e) => {
   menuInner.classList.toggle('show')
 })
 
+// Language buttons
 const languagebtn = document.querySelectorAll('.language')
-
-console.log(languagebtn)
-
 languagebtn.forEach((item) => {
   item.addEventListener('click', (e) => {
     e.preventDefault()
