@@ -2,6 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+#mobile-container {
+  display: none;
+}
+
 /*  font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif; */
 
@@ -257,24 +276,23 @@ body {
   margin-top: 0.7rem;
 }
 
-@media only screen and (max-width: 1200px) {
-  .Slider {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-  }
-
-  .Slider-left {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .Slider-left-books {
-    width: auto;
-  }
+.Slider {
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
+
+.Slider-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Slider-left-books {
+  width: auto;
+}
+
 
 @media only screen and (max-width: 1024px) {
   .book-wrapper:nth-child(3) {
@@ -902,12 +920,25 @@ textarea {
   margin: 0;
 }
 
+.öneri-wrapper-top {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .öneri-wrapper {
   background: linear-gradient(100.8deg, #FBDEC7 0.45%, rgba(255, 255, 255, 0) 99.71%);
   border-radius: 21px;
 
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.öneri-wrapper img {
+  z-index: -1;
 }
 
 .öneri-left {
@@ -1020,9 +1051,293 @@ textarea {
   color: #000000;
 }
 
-
-
-
-
-
 /* Kitap Listesi AND */
+/* -----------------------------------------------------------*/
+/*MOBİLE ANA SAYFA */
+
+.Mobile-Navbar {
+  width: 100%;
+}
+
+.Mobile-NavbarList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+/* Mobile Slider*/
+.MobileSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.MobileSlider h3 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.MobileSlider h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.Mobile-hesabım-book-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Mobilescrool {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mobilescrool span {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #000000;
+  opacity: 1;
+}
+
+.Mobile-kategoriler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Mobile-kategori-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Mobile kategori son */
+/*  mobile-son-değerlendirilen */
+
+.Mobile-Son-Değerlendirilen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.head-wrapper h4 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+  margin-top: 5px;
+}
+
+/*  mobile-son-değerlendirilen son */
+
+.Mobile-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mobile-news h3 {
+
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+  margin: 1rem 0;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.news-item-btn {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 1rem;
+}
+
+.news-item .news-item-desc .hesabım-stars {
+  margin-bottom: 5px;
+}
+
+/* Öneri  */
+.mobile-öneri {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobile-öneri p {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.mobile-öneri p svg {
+  width: 15px;
+}
+
+.mobile-öneri h2 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.mobile-öneri img {
+  z-index: -1;
+}
+
+.mobile-öneri-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 700px;
+  margin-left: 10rem;
+}
+
+.mobile-öneri-btn svg {
+  width: 25px;
+}
+
+.mobile-öneri-btn {
+  width: 100%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+#öneri-wrapper {
+  overflow-x: hidden;
+  justify-content: inherit;
+  max-width: 576px;
+}
+
+/* Öneri And */
+
+@media only screen and (max-width: 576px) {
+  .container {
+    margin: 0;
+  }
+
+  .about-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .about-footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mobile-container {
+    display: block;
+  }
+
+  #desktop-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .kategori-slide {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Mobile Ana sayfa AND */
