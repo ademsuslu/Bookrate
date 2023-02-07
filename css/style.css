@@ -47,6 +47,8 @@ body {
 .row {
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .Language {
@@ -60,14 +62,20 @@ body {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*Navbar */
 .Navbar {
   width: 100%;
   padding: 10px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 40px 48%);
+  grid-template-areas:
+    'start left  center right'
+  ;
   margin-top: 18px;
-  justify-content: space-between;
-  align-items: center;
   border-top: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
@@ -79,6 +87,14 @@ body {
 .NavbarList {
   display: flex;
   align-items: center;
+  grid-area: left;
+
+}
+
+@media only screen and (max-width: 1362px) {
+  .NavbarList {
+    display: none;
+  }
 }
 
 .NavbarListItem {
@@ -90,25 +106,32 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  font-size: clamp(1rem, 1.0781rem + -0.25vw, 0.9375rem);
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
   /* identical to box height */
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
   white-space: nowrap;
-
 }
+
 
 .logo {
   margin: 0 auto;
+  grid-area: center;
 }
 
 .Navbar-sağ {
+  grid-area: right;
   display: flex;
   justify-content: space-evenly;
-  width: 25%;
+  /* width: 25%; */
   align-items: center;
+  margin-left: auto;
+}
+
+.Navbar-sağ a {
+  margin: 0 1rem;
 }
 
 .Navbar-input-wrapper {
@@ -1090,6 +1113,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  font-size: 14px;
 }
 
 /* Mobile Slider*/
@@ -1381,7 +1405,12 @@ textarea {
   position: relative;
 }
 
-.menu__button {}
+.menu__button {
+  grid-area: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .menu__inner {
   background: #FDFBF7;
@@ -1389,13 +1418,12 @@ textarea {
   color: #000000;
   z-index: 2;
   height: 300px;
-  width: 1300%;
-  min-width: 100%;
+  width: 300px;
   display: none;
   position: absolute;
   border-radius: 1;
-  top: 2rem;
-  left: 0;
+  top: 7rem;
+  left: 40px;
   padding: 1rem;
 }
 
