@@ -482,6 +482,7 @@ button {
 
 .about-socials svg {
   margin: 10px 5px;
+  cursor: pointer;
 }
 
 .about-footer-email-wrapper {
