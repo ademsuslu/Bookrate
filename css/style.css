@@ -62,9 +62,9 @@ body {
 
 /*Navbar */
 .Navbar {
+  width: 100%;
   padding: 10px;
   display: flex;
-  width: 100%;
   margin-top: 18px;
   justify-content: space-between;
   align-items: center;
@@ -78,6 +78,7 @@ body {
 
 .NavbarList {
   display: flex;
+  align-items: center;
 }
 
 .NavbarListItem {
@@ -105,8 +106,8 @@ body {
 
 .Navbar-sağ {
   display: flex;
-  justify-content: space-between;
-  width: 350px;
+  justify-content: space-evenly;
+  width: 25%;
   align-items: center;
 }
 
@@ -120,6 +121,16 @@ body {
   height: 50px;
   padding: 5px 10px;
   /* margin-right: 2rem; */
+}
+
+@media only screen and (max-width: 1116px) {
+  .Navbar-input-wrapper {
+    display: none;
+  }
+
+  .Navbar-sağ {
+    /* justify-content: ; */
+  }
 }
 
 .Navbar-input-wrapper input {
@@ -149,8 +160,14 @@ body {
   align-items: center;
   position: relative;
   justify-content: center;
+  gap: 32px;
 }
 
+@media only screen and (max-width: 1116px) {
+  .Slider {
+    flex-direction: column;
+  }
+}
 
 .BottomSlideImg {
   width: 100%;
@@ -276,11 +293,6 @@ body {
   margin-top: 0.7rem;
 }
 
-.Slider {
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-}
 
 .Slider-left {
   display: flex;
@@ -939,10 +951,12 @@ textarea {
 
 .öneri-wrapper img {
   z-index: -1;
+  max-width: 500px;
+  width: 100%;
 }
 
 .öneri-left {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .öneri-wrapper svg {
@@ -1017,6 +1031,18 @@ textarea {
   grid-template-rows: repeat(5, auto);
   grid-column-gap: 5px;
   grid-row-gap: 0px;
+  white-space: wrap;
+}
+
+@media only screen and (max-width: 1116px) {
+  .book-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    white-space: wrap;
+  }
 }
 
 .book-list-desc {
@@ -1341,3 +1367,100 @@ textarea {
 }
 
 /* Mobile Ana sayfa AND */
+
+
+/* Hamburger */
+.NavbarListItem {
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.menu__button {}
+
+.menu__inner {
+  background: #FDFBF7;
+  border-radius: 20px;
+  color: #000000;
+  z-index: 2;
+  height: 300px;
+  width: 1300%;
+  min-width: 100%;
+  display: none;
+  position: absolute;
+  border-radius: 1;
+  top: 2rem;
+  left: 0;
+  padding: 1rem;
+}
+
+.menu__inner_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__inner_list_item {
+
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.menu__inner_list_item a {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+
+
+}
+
+.menu__inner.show {
+  display: revert;
+}
+
+.menu__inner__KVKK {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem !important;
+  margin: 0 5px;
+}
+
+.menu__inner__KVKK a {
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  flex-wrap: nowrap;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+
+}
+
+.menu__about-socials {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.menu__about-socials svg {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Hamburger and */
