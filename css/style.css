@@ -1070,6 +1070,13 @@ textarea {
 }
 
 /* List */
+.book-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .book-list-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 240px);
